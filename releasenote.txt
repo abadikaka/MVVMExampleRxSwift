@@ -1,0 +1,25 @@
+Dependency Manager I Use :
+- Cocoapods
+
+Framework I use :
+- Alamofire
+- RxSwift + RxCocoa
+
+Icon I use :
+- freeicon (dot) com free favorite and unfavorite icon
+- wikipedia for Astro Icon
+
+Design Pattern I use :
+- MVVM with RxSwift
+
+Info on Assignment I completed :
+- Level 1 done all functionalities
+
+- Level 2 is done . I can display all guide channel tv with airing time , responsive with current user device timezone and limit to 7 day after. For pagination not sure on the parameter for the endpoint (no params in the endpoint for page=2 etc), bcs no pagination I didn’t use lazy load concept (I could use it in willdisplay cell on each last row).
+
+- Level 3 only sort by favorite and create class for User Profile. Google login and FB need configure their SDK and dashboard with proper key, also for cloud based, AWS I dont have free tier in my account, and either it or firebase or other sdk need more time to configure it. Logout basically just clear cache from db I use cloud and in-app database.
+For prompt to login , logic just check have user or not in root controller, if not present modally the controller of login controller
+
+- Focusing on how do I modeling the project and implement MVVM with RxSwift and SOLID principle for each object
+
+- I documented each function clearly with proper comment above the class / function / protocol
