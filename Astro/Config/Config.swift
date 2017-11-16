@@ -14,18 +14,18 @@ import Foundation
 struct Config {
     
     // base URL for the application API
-    static let baseURL = "http://ams-api.astro.com.my/"
+    static let baseURL = ""
 
     // Endpoint for V3
     struct EndpointV3 {
-        static let getChannelList = Config.baseURL + "ams/v3/getChannelList"
-        static let getChannels = Config.baseURL + "ams/v3/getChannels"
-        static let getEvents = Config.baseURL + "ams/v3/getEvents"
-        static let searchEvents = Config.baseURL + "ams/v3/searchEvents"
-        static let searchVOD = Config.baseURL + "ams/v3/searchVOD"
-        static let getVOD = Config.baseURL + "ams/v3/getVOD"
-        static let getBucketList = Config.baseURL + "ams/v3/getBucketList"
-        static let getCuratedContentLite = Config.baseURL + "ams/v3/epg/getCuratedContentLite"
+        static let getChannelList = Config.baseURL + ""
+        static let getChannels = Config.baseURL + ""
+        static let getEvents = Config.baseURL + ""
+        static let searchEvents = Config.baseURL + ""
+        static let searchVOD = Config.baseURL + ""
+        static let getVOD = Config.baseURL + ""
+        static let getBucketList = Config.baseURL + ""
+        static let getCuratedContentLite = Config.baseURL + ""
     }
     
     // Avoid initialization of this (it's just for namingspace purposes)
