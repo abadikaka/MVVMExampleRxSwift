@@ -1,0 +1,929 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CFF053473256ECEA84C225C /* Pods_AstroTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5F8FAB7BB32A9729D9FCE00 /* Pods_AstroTests.framework */; };
+		137C32B7D1B2C86E02A2813B /* Pods_AstroUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C516E1C74DD14BB66248E37 /* Pods_AstroUITests.framework */; };
+		451845EA1FB0A4B70053A9A1 /* GuideCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451845E91FB0A4B70053A9A1 /* GuideCollectionViewController.swift */; };
+		451845ED1FB0A58F0053A9A1 /* GuideCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451845EB1FB0A58F0053A9A1 /* GuideCollectionViewCell.swift */; };
+		451845EE1FB0A58F0053A9A1 /* GuideCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 451845EC1FB0A58F0053A9A1 /* GuideCollectionViewCell.xib */; };
+		451845F01FB0AB790053A9A1 /* GuideChannelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451845EF1FB0AB790053A9A1 /* GuideChannelViewModel.swift */; };
+		451845F21FB0BE7D0053A9A1 /* GuideChannelList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 451845F11FB0BE7D0053A9A1 /* GuideChannelList.swift */; };
+		45804B861FA9EE3C00F711B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45804B851FA9EE3C00F711B3 /* AppDelegate.swift */; };
+		45804B881FA9EE3C00F711B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45804B871FA9EE3C00F711B3 /* ViewController.swift */; };
+		45804B8B1FA9EE3C00F711B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45804B891FA9EE3C00F711B3 /* Main.storyboard */; };
+		45804B8E1FA9EE3C00F711B3 /* Astro.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 45804B8C1FA9EE3C00F711B3 /* Astro.xcdatamodeld */; };
+		45804B901FA9EE3C00F711B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45804B8F1FA9EE3C00F711B3 /* Assets.xcassets */; };
+		45804B931FA9EE3C00F711B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45804B911FA9EE3C00F711B3 /* LaunchScreen.storyboard */; };
+		45804B9E1FA9EE3C00F711B3 /* AstroTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45804B9D1FA9EE3C00F711B3 /* AstroTests.swift */; };
+		45804BA91FA9EE3C00F711B3 /* AstroUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45804BA81FA9EE3C00F711B3 /* AstroUITests.swift */; };
+		45804BBD1FA9EEC200F711B3 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45804BBC1FA9EEC200F711B3 /* Config.swift */; };
+		45804BBF1FA9F1DC00F711B3 /* ChannelList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45804BBE1FA9F1DC00F711B3 /* ChannelList.swift */; };
+		45804BC21FA9F88D00F711B3 /* ProfileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45804BC11FA9F88D00F711B3 /* ProfileInfo.swift */; };
+		45804BC41FA9FE6400F711B3 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45804BC31FA9FE6400F711B3 /* Extension.swift */; };
+		45804BC61FA9FE7000F711B3 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45804BC51FA9FE7000F711B3 /* NetworkManager.swift */; };
+		45804BCA1FA9FF4100F711B3 /* ChannelListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45804BC81FA9FF4100F711B3 /* ChannelListCollectionViewCell.swift */; };
+		45804BCB1FA9FF4100F711B3 /* ChannelListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45804BC91FA9FF4100F711B3 /* ChannelListCollectionViewCell.xib */; };
+		45804BCD1FAA035000F711B3 /* HomeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45804BCC1FAA035000F711B3 /* HomeCollectionViewController.swift */; };
+		45804BD11FAA0BE300F711B3 /* SortBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45804BD01FAA0BE300F711B3 /* SortBar.swift */; };
+		45804BD31FAA1A7500F711B3 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 45804BD21FAA1A7500F711B3 /* MenuCell.xib */; };
+		45804BD51FAA4D7000F711B3 /* ResponseStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45804BD41FAA4D7000F711B3 /* ResponseStatus.swift */; };
+		45AF270C1FAB57F30094F211 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AF270B1FAB57F30094F211 /* DatabaseManager.swift */; };
+		45AF270E1FAB59910094F211 /* HomeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AF270D1FAB59910094F211 /* HomeProtocol.swift */; };
+		45AF27101FAB681B0094F211 /* HomeChannelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45AF270F1FAB681B0094F211 /* HomeChannelViewModel.swift */; };
+		E57D79E2A34C4E2B0CC5AD26 /* Pods_Astro.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D93DC2A39E54A1FB6558017 /* Pods_Astro.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		45804B9A1FA9EE3C00F711B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45804B7A1FA9EE3C00F711B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45804B811FA9EE3C00F711B3;
+			remoteInfo = Astro;
+		};
+		45804BA51FA9EE3C00F711B3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45804B7A1FA9EE3C00F711B3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 45804B811FA9EE3C00F711B3;
+			remoteInfo = Astro;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D93DC2A39E54A1FB6558017 /* Pods_Astro.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Astro.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AB623812C41665765FDDE38 /* Pods-AstroUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AstroUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AstroUITests/Pods-AstroUITests.release.xcconfig"; sourceTree = "<group>"; };
+		240EE87DC5321726816789E8 /* Pods-AstroTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AstroTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AstroTests/Pods-AstroTests.debug.xcconfig"; sourceTree = "<group>"; };
+		451845E91FB0A4B70053A9A1 /* GuideCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideCollectionViewController.swift; sourceTree = "<group>"; };
+		451845EB1FB0A58F0053A9A1 /* GuideCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideCollectionViewCell.swift; sourceTree = "<group>"; };
+		451845EC1FB0A58F0053A9A1 /* GuideCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideCollectionViewCell.xib; sourceTree = "<group>"; };
+		451845EF1FB0AB790053A9A1 /* GuideChannelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideChannelViewModel.swift; sourceTree = "<group>"; };
+		451845F11FB0BE7D0053A9A1 /* GuideChannelList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideChannelList.swift; sourceTree = "<group>"; };
+		45804B821FA9EE3C00F711B3 /* Astro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Astro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		45804B851FA9EE3C00F711B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		45804B871FA9EE3C00F711B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		45804B8A1FA9EE3C00F711B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		45804B8D1FA9EE3C00F711B3 /* Astro.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Astro.xcdatamodel; sourceTree = "<group>"; };
+		45804B8F1FA9EE3C00F711B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		45804B921FA9EE3C00F711B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		45804B941FA9EE3C00F711B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45804B991FA9EE3C00F711B3 /* AstroTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstroTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		45804B9D1FA9EE3C00F711B3 /* AstroTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroTests.swift; sourceTree = "<group>"; };
+		45804B9F1FA9EE3C00F711B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45804BA41FA9EE3C00F711B3 /* AstroUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstroUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		45804BA81FA9EE3C00F711B3 /* AstroUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroUITests.swift; sourceTree = "<group>"; };
+		45804BAA1FA9EE3C00F711B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45804BBC1FA9EEC200F711B3 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		45804BBE1FA9F1DC00F711B3 /* ChannelList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelList.swift; sourceTree = "<group>"; };
+		45804BC11FA9F88D00F711B3 /* ProfileInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileInfo.swift; sourceTree = "<group>"; };
+		45804BC31FA9FE6400F711B3 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		45804BC51FA9FE7000F711B3 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		45804BC81FA9FF4100F711B3 /* ChannelListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelListCollectionViewCell.swift; sourceTree = "<group>"; };
+		45804BC91FA9FF4100F711B3 /* ChannelListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChannelListCollectionViewCell.xib; sourceTree = "<group>"; };
+		45804BCC1FAA035000F711B3 /* HomeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewController.swift; sourceTree = "<group>"; };
+		45804BD01FAA0BE300F711B3 /* SortBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortBar.swift; sourceTree = "<group>"; };
+		45804BD21FAA1A7500F711B3 /* MenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
+		45804BD41FAA4D7000F711B3 /* ResponseStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseStatus.swift; sourceTree = "<group>"; };
+		45AF270B1FAB57F30094F211 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		45AF270D1FAB59910094F211 /* HomeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocol.swift; sourceTree = "<group>"; };
+		45AF270F1FAB681B0094F211 /* HomeChannelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeChannelViewModel.swift; sourceTree = "<group>"; };
+		5C516E1C74DD14BB66248E37 /* Pods_AstroUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AstroUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6789704DFFDB844B7EADF6F3 /* Pods-AstroUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AstroUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AstroUITests/Pods-AstroUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7EB23BBA48F67C1224D6DC3D /* Pods-Astro.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Astro.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Astro/Pods-Astro.debug.xcconfig"; sourceTree = "<group>"; };
+		9E131BF77E69BEF34ECB1AE7 /* Pods-Astro.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Astro.release.xcconfig"; path = "Pods/Target Support Files/Pods-Astro/Pods-Astro.release.xcconfig"; sourceTree = "<group>"; };
+		C02E15D64D96DF3A35167045 /* Pods-AstroTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AstroTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AstroTests/Pods-AstroTests.release.xcconfig"; sourceTree = "<group>"; };
+		D5F8FAB7BB32A9729D9FCE00 /* Pods_AstroTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AstroTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45804B7F1FA9EE3C00F711B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E57D79E2A34C4E2B0CC5AD26 /* Pods_Astro.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45804B961FA9EE3C00F711B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CFF053473256ECEA84C225C /* Pods_AstroTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45804BA11FA9EE3C00F711B3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				137C32B7D1B2C86E02A2813B /* Pods_AstroUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		45804B791FA9EE3C00F711B3 = {
+			isa = PBXGroup;
+			children = (
+				45804B841FA9EE3C00F711B3 /* Astro */,
+				45804B9C1FA9EE3C00F711B3 /* AstroTests */,
+				45804BA71FA9EE3C00F711B3 /* AstroUITests */,
+				45804B831FA9EE3C00F711B3 /* Products */,
+				BA5531CD34DFA640A53EA98C /* Pods */,
+				4B39A5348D29B1D6126DCDA5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		45804B831FA9EE3C00F711B3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45804B821FA9EE3C00F711B3 /* Astro.app */,
+				45804B991FA9EE3C00F711B3 /* AstroTests.xctest */,
+				45804BA41FA9EE3C00F711B3 /* AstroUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		45804B841FA9EE3C00F711B3 /* Astro */ = {
+			isa = PBXGroup;
+			children = (
+				45804BC01FA9F3EE00F711B3 /* Component */,
+				45804BBB1FA9EE6F00F711B3 /* Helper */,
+				45804BBA1FA9EE6100F711B3 /* Interfaces */,
+				45804BB91FA9EE5900F711B3 /* View */,
+				45804BB81FA9EE5200F711B3 /* ViewModel */,
+				45804BB71FA9EE4D00F711B3 /* Model */,
+				45804BB61FA9EE4500F711B3 /* Config */,
+				45804B851FA9EE3C00F711B3 /* AppDelegate.swift */,
+				45804B871FA9EE3C00F711B3 /* ViewController.swift */,
+				45804B8F1FA9EE3C00F711B3 /* Assets.xcassets */,
+				45804B911FA9EE3C00F711B3 /* LaunchScreen.storyboard */,
+				45804B941FA9EE3C00F711B3 /* Info.plist */,
+				45804B8C1FA9EE3C00F711B3 /* Astro.xcdatamodeld */,
+			);
+			path = Astro;
+			sourceTree = "<group>";
+		};
+		45804B9C1FA9EE3C00F711B3 /* AstroTests */ = {
+			isa = PBXGroup;
+			children = (
+				45804B9D1FA9EE3C00F711B3 /* AstroTests.swift */,
+				45804B9F1FA9EE3C00F711B3 /* Info.plist */,
+			);
+			path = AstroTests;
+			sourceTree = "<group>";
+		};
+		45804BA71FA9EE3C00F711B3 /* AstroUITests */ = {
+			isa = PBXGroup;
+			children = (
+				45804BA81FA9EE3C00F711B3 /* AstroUITests.swift */,
+				45804BAA1FA9EE3C00F711B3 /* Info.plist */,
+			);
+			path = AstroUITests;
+			sourceTree = "<group>";
+		};
+		45804BB61FA9EE4500F711B3 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				45804BBC1FA9EEC200F711B3 /* Config.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		45804BB71FA9EE4D00F711B3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				45AF270D1FAB59910094F211 /* HomeProtocol.swift */,
+				45F75CF81FAB196600207A89 /* Networking */,
+				45F75CF71FAB195500207A89 /* Home */,
+				45804BC11FA9F88D00F711B3 /* ProfileInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		45804BB81FA9EE5200F711B3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				45AF270F1FAB681B0094F211 /* HomeChannelViewModel.swift */,
+				451845EF1FB0AB790053A9A1 /* GuideChannelViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		45804BB91FA9EE5900F711B3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				45804BC81FA9FF4100F711B3 /* ChannelListCollectionViewCell.swift */,
+				45804BCC1FAA035000F711B3 /* HomeCollectionViewController.swift */,
+				451845E91FB0A4B70053A9A1 /* GuideCollectionViewController.swift */,
+				451845EB1FB0A58F0053A9A1 /* GuideCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		45804BBA1FA9EE6100F711B3 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				45804BC71FA9FF2600F711B3 /* ChannelList */,
+				45804B891FA9EE3C00F711B3 /* Main.storyboard */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		45804BBB1FA9EE6F00F711B3 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				45804BC31FA9FE6400F711B3 /* Extension.swift */,
+				45804BC51FA9FE7000F711B3 /* NetworkManager.swift */,
+				45AF270B1FAB57F30094F211 /* DatabaseManager.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		45804BC01FA9F3EE00F711B3 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				45804BD01FAA0BE300F711B3 /* SortBar.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		45804BC71FA9FF2600F711B3 /* ChannelList */ = {
+			isa = PBXGroup;
+			children = (
+				45804BC91FA9FF4100F711B3 /* ChannelListCollectionViewCell.xib */,
+				451845EC1FB0A58F0053A9A1 /* GuideCollectionViewCell.xib */,
+				45804BD21FAA1A7500F711B3 /* MenuCell.xib */,
+			);
+			path = ChannelList;
+			sourceTree = "<group>";
+		};
+		45F75CF71FAB195500207A89 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				45804BBE1FA9F1DC00F711B3 /* ChannelList.swift */,
+				451845F11FB0BE7D0053A9A1 /* GuideChannelList.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		45F75CF81FAB196600207A89 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				45804BD41FAA4D7000F711B3 /* ResponseStatus.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		4B39A5348D29B1D6126DCDA5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D93DC2A39E54A1FB6558017 /* Pods_Astro.framework */,
+				D5F8FAB7BB32A9729D9FCE00 /* Pods_AstroTests.framework */,
+				5C516E1C74DD14BB66248E37 /* Pods_AstroUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BA5531CD34DFA640A53EA98C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7EB23BBA48F67C1224D6DC3D /* Pods-Astro.debug.xcconfig */,
+				9E131BF77E69BEF34ECB1AE7 /* Pods-Astro.release.xcconfig */,
+				240EE87DC5321726816789E8 /* Pods-AstroTests.debug.xcconfig */,
+				C02E15D64D96DF3A35167045 /* Pods-AstroTests.release.xcconfig */,
+				6789704DFFDB844B7EADF6F3 /* Pods-AstroUITests.debug.xcconfig */,
+				1AB623812C41665765FDDE38 /* Pods-AstroUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		45804B811FA9EE3C00F711B3 /* Astro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45804BAD1FA9EE3C00F711B3 /* Build configuration list for PBXNativeTarget "Astro" */;
+			buildPhases = (
+				A6F64F9D7B03DE2310F0221B /* [CP] Check Pods Manifest.lock */,
+				45804B7E1FA9EE3C00F711B3 /* Sources */,
+				45804B7F1FA9EE3C00F711B3 /* Frameworks */,
+				45804B801FA9EE3C00F711B3 /* Resources */,
+				1EF1A6FEC55928ADE44622D8 /* [CP] Embed Pods Frameworks */,
+				00B47D578DFAF972781F7B91 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Astro;
+			productName = Astro;
+			productReference = 45804B821FA9EE3C00F711B3 /* Astro.app */;
+			productType = "com.apple.product-type.application";
+		};
+		45804B981FA9EE3C00F711B3 /* AstroTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45804BB01FA9EE3C00F711B3 /* Build configuration list for PBXNativeTarget "AstroTests" */;
+			buildPhases = (
+				5473F5693284589479415864 /* [CP] Check Pods Manifest.lock */,
+				45804B951FA9EE3C00F711B3 /* Sources */,
+				45804B961FA9EE3C00F711B3 /* Frameworks */,
+				45804B971FA9EE3C00F711B3 /* Resources */,
+				E293FA745F28382AF8124A5D /* [CP] Embed Pods Frameworks */,
+				CE92850F87E23FDED18FAD4D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45804B9B1FA9EE3C00F711B3 /* PBXTargetDependency */,
+			);
+			name = AstroTests;
+			productName = AstroTests;
+			productReference = 45804B991FA9EE3C00F711B3 /* AstroTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		45804BA31FA9EE3C00F711B3 /* AstroUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 45804BB31FA9EE3C00F711B3 /* Build configuration list for PBXNativeTarget "AstroUITests" */;
+			buildPhases = (
+				7DA7884A8150C1477A68FBD0 /* [CP] Check Pods Manifest.lock */,
+				45804BA01FA9EE3C00F711B3 /* Sources */,
+				45804BA11FA9EE3C00F711B3 /* Frameworks */,
+				45804BA21FA9EE3C00F711B3 /* Resources */,
+				4427D0143F2C0AD2A0783903 /* [CP] Embed Pods Frameworks */,
+				ADBD4C301BD74F10E988CD28 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45804BA61FA9EE3C00F711B3 /* PBXTargetDependency */,
+			);
+			name = AstroUITests;
+			productName = AstroUITests;
+			productReference = 45804BA41FA9EE3C00F711B3 /* AstroUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		45804B7A1FA9EE3C00F711B3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Michael Abadi Santoso";
+				TargetAttributes = {
+					45804B811FA9EE3C00F711B3 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					45804B981FA9EE3C00F711B3 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 45804B811FA9EE3C00F711B3;
+					};
+					45804BA31FA9EE3C00F711B3 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 45804B811FA9EE3C00F711B3;
+					};
+				};
+			};
+			buildConfigurationList = 45804B7D1FA9EE3C00F711B3 /* Build configuration list for PBXProject "Astro" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 45804B791FA9EE3C00F711B3;
+			productRefGroup = 45804B831FA9EE3C00F711B3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				45804B811FA9EE3C00F711B3 /* Astro */,
+				45804B981FA9EE3C00F711B3 /* AstroTests */,
+				45804BA31FA9EE3C00F711B3 /* AstroUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		45804B801FA9EE3C00F711B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45804B931FA9EE3C00F711B3 /* LaunchScreen.storyboard in Resources */,
+				45804B901FA9EE3C00F711B3 /* Assets.xcassets in Resources */,
+				45804BD31FAA1A7500F711B3 /* MenuCell.xib in Resources */,
+				45804BCB1FA9FF4100F711B3 /* ChannelListCollectionViewCell.xib in Resources */,
+				45804B8B1FA9EE3C00F711B3 /* Main.storyboard in Resources */,
+				451845EE1FB0A58F0053A9A1 /* GuideCollectionViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45804B971FA9EE3C00F711B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45804BA21FA9EE3C00F711B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00B47D578DFAF972781F7B91 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Astro/Pods-Astro-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1EF1A6FEC55928ADE44622D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Astro/Pods-Astro-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4427D0143F2C0AD2A0783903 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AstroUITests/Pods-AstroUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5473F5693284589479415864 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7DA7884A8150C1477A68FBD0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A6F64F9D7B03DE2310F0221B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ADBD4C301BD74F10E988CD28 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AstroUITests/Pods-AstroUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE92850F87E23FDED18FAD4D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AstroTests/Pods-AstroTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E293FA745F28382AF8124A5D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AstroTests/Pods-AstroTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		45804B7E1FA9EE3C00F711B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45AF270E1FAB59910094F211 /* HomeProtocol.swift in Sources */,
+				45804B881FA9EE3C00F711B3 /* ViewController.swift in Sources */,
+				45804BBD1FA9EEC200F711B3 /* Config.swift in Sources */,
+				451845ED1FB0A58F0053A9A1 /* GuideCollectionViewCell.swift in Sources */,
+				45AF270C1FAB57F30094F211 /* DatabaseManager.swift in Sources */,
+				45804BC41FA9FE6400F711B3 /* Extension.swift in Sources */,
+				45804BCD1FAA035000F711B3 /* HomeCollectionViewController.swift in Sources */,
+				45804BD51FAA4D7000F711B3 /* ResponseStatus.swift in Sources */,
+				45804B8E1FA9EE3C00F711B3 /* Astro.xcdatamodeld in Sources */,
+				45804BC61FA9FE7000F711B3 /* NetworkManager.swift in Sources */,
+				45804B861FA9EE3C00F711B3 /* AppDelegate.swift in Sources */,
+				45804BC21FA9F88D00F711B3 /* ProfileInfo.swift in Sources */,
+				451845F21FB0BE7D0053A9A1 /* GuideChannelList.swift in Sources */,
+				45804BD11FAA0BE300F711B3 /* SortBar.swift in Sources */,
+				45804BBF1FA9F1DC00F711B3 /* ChannelList.swift in Sources */,
+				45AF27101FAB681B0094F211 /* HomeChannelViewModel.swift in Sources */,
+				45804BCA1FA9FF4100F711B3 /* ChannelListCollectionViewCell.swift in Sources */,
+				451845EA1FB0A4B70053A9A1 /* GuideCollectionViewController.swift in Sources */,
+				451845F01FB0AB790053A9A1 /* GuideChannelViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45804B951FA9EE3C00F711B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45804B9E1FA9EE3C00F711B3 /* AstroTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45804BA01FA9EE3C00F711B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45804BA91FA9EE3C00F711B3 /* AstroUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		45804B9B1FA9EE3C00F711B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45804B811FA9EE3C00F711B3 /* Astro */;
+			targetProxy = 45804B9A1FA9EE3C00F711B3 /* PBXContainerItemProxy */;
+		};
+		45804BA61FA9EE3C00F711B3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 45804B811FA9EE3C00F711B3 /* Astro */;
+			targetProxy = 45804BA51FA9EE3C00F711B3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		45804B891FA9EE3C00F711B3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45804B8A1FA9EE3C00F711B3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		45804B911FA9EE3C00F711B3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				45804B921FA9EE3C00F711B3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		45804BAB1FA9EE3C00F711B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		45804BAC1FA9EE3C00F711B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		45804BAE1FA9EE3C00F711B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EB23BBA48F67C1224D6DC3D /* Pods-Astro.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8PLMRB7SWH;
+				INFOPLIST_FILE = Astro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michael.abadi.Astro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		45804BAF1FA9EE3C00F711B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E131BF77E69BEF34ECB1AE7 /* Pods-Astro.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8PLMRB7SWH;
+				INFOPLIST_FILE = Astro/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michael.abadi.Astro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		45804BB11FA9EE3C00F711B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 240EE87DC5321726816789E8 /* Pods-AstroTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8PLMRB7SWH;
+				INFOPLIST_FILE = AstroTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michael.abadi.AstroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Astro.app/Astro";
+			};
+			name = Debug;
+		};
+		45804BB21FA9EE3C00F711B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C02E15D64D96DF3A35167045 /* Pods-AstroTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8PLMRB7SWH;
+				INFOPLIST_FILE = AstroTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michael.abadi.AstroTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Astro.app/Astro";
+			};
+			name = Release;
+		};
+		45804BB41FA9EE3C00F711B3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6789704DFFDB844B7EADF6F3 /* Pods-AstroUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8PLMRB7SWH;
+				INFOPLIST_FILE = AstroUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michael.abadi.AstroUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Astro;
+			};
+			name = Debug;
+		};
+		45804BB51FA9EE3C00F711B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AB623812C41665765FDDE38 /* Pods-AstroUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8PLMRB7SWH;
+				INFOPLIST_FILE = AstroUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.michael.abadi.AstroUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Astro;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		45804B7D1FA9EE3C00F711B3 /* Build configuration list for PBXProject "Astro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45804BAB1FA9EE3C00F711B3 /* Debug */,
+				45804BAC1FA9EE3C00F711B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45804BAD1FA9EE3C00F711B3 /* Build configuration list for PBXNativeTarget "Astro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45804BAE1FA9EE3C00F711B3 /* Debug */,
+				45804BAF1FA9EE3C00F711B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45804BB01FA9EE3C00F711B3 /* Build configuration list for PBXNativeTarget "AstroTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45804BB11FA9EE3C00F711B3 /* Debug */,
+				45804BB21FA9EE3C00F711B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		45804BB31FA9EE3C00F711B3 /* Build configuration list for PBXNativeTarget "AstroUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45804BB41FA9EE3C00F711B3 /* Debug */,
+				45804BB51FA9EE3C00F711B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		45804B8C1FA9EE3C00F711B3 /* Astro.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				45804B8D1FA9EE3C00F711B3 /* Astro.xcdatamodel */,
+			);
+			currentVersion = 45804B8D1FA9EE3C00F711B3 /* Astro.xcdatamodel */;
+			path = Astro.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 45804B7A1FA9EE3C00F711B3 /* Project object */;
+}
